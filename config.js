@@ -35,7 +35,7 @@ export const config = {
     ]
   },
   server: {
-    port: parseInt(process.env.PORT || "3000", 10),
+    port: process.env.PORT || 3000,
     defenderApiKey: process.env.DEFENDER_API_KEY || "",
     defenderOfflineMode: !process.env.DEFENDER_API_KEY
   }
